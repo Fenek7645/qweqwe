@@ -1,0 +1,25 @@
+{% extends "main/layout.html" %}
+{% block title %}
+    Вход
+{% endblock%}
+
+{% block content %}
+<form class="regestration" method="post">
+    {% csrf_token %}
+    <div class="form">
+      <h2>Вход</h2>
+      <input type="text" placeholder="Введите ваш электронный адрес" class="mail">
+      <div class="password">
+        <input type="password" placeholder="Введите пароль" class="password" autocomplete="new-password" >
+      </div>
+      <input type="submit" value="Войти" class="submit" onclick="location.href='{% url 'login' %}">
+      
+      <p>Еще не зарегистрированы?</p>
+      <a href="{% url 'reg_home'%}">Зарегистрироваться</a>
+      
+    </form>
+    {{form.errors}}
+</div>
+{% endblock %}
+
+{% comment %} Html верстка, обьяснения не требует  {% endcomment %}

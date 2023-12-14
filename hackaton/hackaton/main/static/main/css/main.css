@@ -1,0 +1,199 @@
+body {
+    background: #FFF;
+}
+
+
+
+/* Квадарат на главной странцие */
+
+main .square{
+    right: -350px;
+    position: absolute;
+    width: 1140.574px;
+    height: 1135.882px;
+    transform: rotate(-125.849deg);
+    flex-shrink: 0;
+    background: #B964FF;
+    z-index: 1;
+}
+
+/* Желтая линия на главной странице */
+main .y_line{
+    position: absolute;
+    width: 100%;
+    height: 93px;
+    background: #FFC800;
+    z-index: 0;
+    
+}
+
+
+
+
+/*Это общшие назначение шрифтов и цвета для главной страници*/
+main .features{
+    color: #3F3F3F;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    z-index: 2;
+    
+}
+/* Логотоп левый верхний углол */
+main .features h1{
+    position: absolute;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    top: 3%;
+    left: 5%;
+    z-index: 2;
+}
+
+
+
+main .features a1{
+    position: absolute;
+    top: 38px;
+    right: 200px;
+    z-index: 2;
+
+}
+
+/* Слоган на главной странице */
+main .features p{
+    position: absolute;
+    top: 243px;
+    left: 98px;
+    letter-spacing: -2.56px;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -2.56px;
+    height: 303px;
+    width: 729px;
+    z-index: 2;
+
+}
+
+/* Картинка человека на главной странцие */
+main .features img{
+    height: 652.266px;
+    width:  869.35px;
+    position: absolute;
+    top: 105px;
+    right: 100px;
+    z-index: 2;
+}
+
+/* Кнопка начать обуение на главной странице */
+main .btns_main a{
+    color: #FFF;
+    background: #B964FF;
+    position: absolute;
+    bottom: 159px;
+    left: 134px;
+    width: 543px;
+    height: 104px;
+    font-size: 48px;
+    font-weight: 400;
+    border-radius: 10px;
+    z-index: 2;
+    text-align: center;
+}
+
+
+main .btns_main_about a{
+    width: 95px;
+    height: 24px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 34px;
+    left: 670px;
+    color: #3F3F3F;
+    display: block;
+    text-decoration: none;
+    z-index: 2;
+
+
+}
+
+main .btns_main_curs a{
+    width: 95px;
+    height: 24px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 34px;
+    left: 780px;
+    color: #3F3F3F;
+    display: block;
+    text-decoration: none;
+    z-index: 2;
+    
+
+}
+
+main .btns_main_chavo a{
+    width: 95px;
+    height: 24px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 34px;
+    left: 890px;
+    color: #3F3F3F;
+    display: block;
+    text-decoration: none;
+    z-index: 2;
+
+}
+
+main .btns_main_regestration a{
+    width: 201px;
+    height: 33px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 34px;
+    right: 250px;
+    color: #3F3F3F;
+    display: block;
+    text-decoration: none;
+    background-color: #FFF;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 2;
+
+}
+
+
+main .btns_main_enter a{
+    width: 100px;
+    height: 33px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 34px;
+    right: 100px;
+    color: #3F3F3F;
+    display: block;
+    text-decoration: none;
+    background-color: #FFF;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 2;
+    
+}
