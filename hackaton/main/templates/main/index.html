@@ -1,0 +1,46 @@
+{% extends "main/layout.html" %}
+
+{% block title %}
+    Школа Безопасноти
+{% endblock%}
+
+{% load static%}
+
+{% block content %}
+<div class="features">
+    <img src="{% static 'main/img/man_with_pc.png'%}">
+    <h1>Школа Безопасноти</h1>
+    <p>Школа Безопасности - Стань гуру цифровой безопасности с нашей платформой!</p>
+
+</div>
+<div class="square"></div>
+
+<div class="y_line"></div>
+
+<div class="btns_main">
+    <a href="about" class="btn">Начать обучение</a>
+</div>
+
+<div class="btns_main_about">
+    <a href="{% url 'about'%}">О нас</a>
+</div>
+
+<div class="btns_main_curs">
+    <a href="{% url 'profile' %}">Курс</a>
+</div>
+
+<div class="btns_main_chavo">
+    <a href="{% url 'chavo'%}">ЧАВО</a>
+</div>
+
+<div class="btns_main_regestration">
+    <a href="{% url 'reg_home'%}">Регистрация</a>
+</div>
+
+<div class="btns_main_enter">
+    <a href="{% url 'enterens'%}">Вход</a>
+</div>
+
+{% endblock %}
+
+{% comment %} Html верстка, обьяснения не требует  {% endcomment %}
