@@ -6,18 +6,18 @@
 
 {% block content %}
 <div class="regestration">
-    <div class="form">
-      <h2>Регистрация</h2>
-      <input type="text" placeholder="Введите ваш электронный адрес" class="mail">
-      <div class="password">
-        <input type="password" placeholder="Введите пароль" class="password" autocomplete="new-password" > 
-        <input type="password" placeholder="Введите пароль ещё раз" class="password2" autocomplete="new-password" >
-      </div>
-      <input type="submit" value="Зарегистрироваться" class="submit">
-      
+    <form action="{% url 'reg_home'%}" method="post">
+      {% csrf_token %}
+      <h1>Регистрация</h1>
+      {{form.email}}
+      {{form.username}}
+      {{form.password1}}
+      {{form.password2}}
+      <input type="submit" value="Войти" class="submit">
       <p>Уже зарегистрированы?</p>
       <a href="{% url 'enterens'%}">Войти</a>
-      
+    </form>
+    {{form.errors}}
     </div>
 </div>
 {% endblock %}
