@@ -1,0 +1,10 @@
+{% load static %}
+
+{% block title %}
+    Профиль
+{% endblock%}
+
+{% block content %}
+    <h1>{{user.username}}</h1>
+    <button class="btn" onclick="location.href='{% url 'logout' %}?next={% url 'home'%}">Выйти</button>
+{% endblock %}
