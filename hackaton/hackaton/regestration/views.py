@@ -1,12 +1,14 @@
 from django.shortcuts import render, HttpResponseRedirect
 
+from django.contrib.auth import logout
+
 from regestration.models import User
 
-from regestration.forms import UserLoginForm, UserRegistrationForm
+from regestration.forms import UserLoginForm, UserRegistrationForm, UserProfileForm
 
 from django.contrib import auth
 # Создаём функции для вывода html страницы
-from django. urls import reverse
+from django.urls import reverse
 
 def regestration(requset):
     if requset.method == "POST":
@@ -37,5 +39,7 @@ def enterens(requset):
     return render(requset, 'regestration/enterens.html', context)
 
 
-def profile_view(requset):
+def profile(requset):
+    form = UserProfileForm(instance=requset.user)
+    context = {'form': form}
     return render(requset, 'regestration/profile.html')

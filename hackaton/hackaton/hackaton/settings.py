@@ -133,3 +133,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Users
 
 AUTH_USER_MODEL = 'regestration.User'
+
+LOGOUT_REDIRECT_URL = "home"

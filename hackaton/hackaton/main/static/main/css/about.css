@@ -1,0 +1,27 @@
+body {
+    background: #FFF;
+}
+
+
+
+main .text_about{
+    font-style: normal;
+}
+
+main .text_about img{
+    width: 828px;
+    height: 828px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+main .text_about .text_about_under{
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.28px;
+    margin-top: 10%;
+
+}

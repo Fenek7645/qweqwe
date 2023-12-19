@@ -1,2 +1,31 @@
 {% extends "main/layout.html" %}
-qweqweqewqe
+{% block title %}
+    Курсы
+{% endblock%}
+
+{% block content %}
+    <div class="y_line"></div>
+    <div class="features">
+        <h1>Школа Безопасноти</h1>
+
+
+
+
+{% if user.is_authenticated %}
+    <div class="auth-True">
+        <div class="btns_main_email">
+            <a href="{% url 'profile' %}">{{user.username}}</a>
+
+        </div>
+    </div>
+{% else %}
+<div class="auth">
+    <div class="btns_main_regestration">
+        <a href="{% url 'reg_home'%}">Регистрация</a>
+    </div>
+
+    <div class="btns_main_enter">
+        <a href="{% url 'enterens'%}">Вход</a>
+    </div>
+{% endif %}
+{% endblock %}
