@@ -1,5 +1,7 @@
 from django.shortcuts import render, HttpResponseRedirect
 
+from django.contrib.auth.decorators import login_required
+
 from django.contrib.auth import logout
 
 from regestration.models import User
@@ -38,7 +40,7 @@ def enterens(requset):
     context = {'form': form}
     return render(requset, 'regestration/enterens.html', context)
 
-
+@login_required(login_url='')
 def profile(requset):
     form = UserProfileForm(instance=requset.user)
     context = {'form': form}
