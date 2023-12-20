@@ -8,11 +8,5 @@ def index(request):
 def about(request):
     return render(request, 'main/about.html')
 
-def regestration(requset):
-    return render(requset, 'regestration/regestration.html')
-
-def enterens(requset):
-    return render(requset, 'regestration/enterens.html')
-
 def chavo(requset):
     return render(requset, 'main/CHAVO.html')

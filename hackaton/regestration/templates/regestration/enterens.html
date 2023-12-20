@@ -4,21 +4,22 @@
 {% endblock%}
 
 {% block content %}
-<form class="regestration" method="post">
-    {% csrf_token %}
-    <div class="form">
-      <h2>Вход</h2>
-      <input type="text" placeholder="Введите ваш электронный адрес" class="mail">
+<div class="regestration">
+    <form action="{% url 'enterens'%}" method="post">
+      {% csrf_token %}
+      <h1>Вход</h1>
+      {{form.username}}
       <div class="password">
-        <input type="password" placeholder="Введите пароль" class="password" autocomplete="new-password" >
-      </div>
-      <input type="submit" value="Войти" class="submit" onclick="location.href='{% url 'login' %}">
+      {{ form.password}}
+      </div> 
+      
+      <input type="submit" value="Войти" class="submit">
       
       <p>Еще не зарегистрированы?</p>
       <a href="{% url 'reg_home'%}">Зарегистрироваться</a>
       
     </form>
-    {{form.errors}}
+
 </div>
 {% endblock %}
 
